@@ -3,6 +3,8 @@
  // по разному выдает ячейки в памяте, тобешь 1 выдает от 1 до 10, а 2 от 11 до 20(к примеру)
 
 
+
+
  // Массивы
 
 // const arr = [];  запись массива
@@ -31,16 +33,53 @@ const deleted = arr.splice(-2, 1)  (-2, 1) - -2, -1, 0, 1, - удалили 4 п
 
 // const arr = [];
 
-// функции высшего порядка
-function goga(func1) {
-    func1();
+// // функции высшего порядка
+// function goga(func1) {
+//     func1();
 
-return function() {
-    return true;
-}
+// return function() {
+//     return true;
+// }
 
-function fuck() {
-    console.log('aboba');
+// function fuck() {
+//     console.log('aboba');
     
-}
-}
+// }
+// }
+
+
+//04.02.2022
+
+// arr.unshift() вставляет в начало масива переменые
+//const deletedElement = arr.shift() удаляет с начала массива переменные
+
+
+// const deletedElement = arr.splice(6(удалит 6 элемент), 7(удалит 7 элемент))
+
+// arr.splice(3, 0, 'Natasha') удалил елемнты и добавил новые
+//  const newArr = arr.slice(0, 7) копирует елемнты с 1 масива в другой
+
+// arr.revers() переварачивает масив
+//arr.includ('Anton') ищет в масиве то что ввел в скобках
+
+//1
+// const number = [1,2,3,4,5];
+// number.forEach(callback);
+
+// function callback(currentName, index) {
+//     console.log(`${currentName ** 3} число в кубе, которое имееет индэкс ${index} из массива number`);
+// }
+
+//2
+// const chetnumber = [1,2,3,4,5];
+// chetnumber.forEach(callback);
+
+// function callback(currentName, index) {
+//     if(index % 2 === 0){
+//     console.log(`${currentName ** 3} число в кубе, которое имееет индэкс ${index} из массива chetnumber`);
+//     }else{
+//         console.log(`${currentName ** 2} число в квадрате, которое имееет индэкс ${index} из массива chetnumber`);
+//     }
+// }
+
+
